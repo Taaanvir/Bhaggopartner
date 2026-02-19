@@ -14,9 +14,89 @@ body {
   color: #f5f6f7;
   font-family: 'Anek Bangla', sans-serif;
   margin: 0;
-  padding: 20px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.site-header-top {
+  background: #1f6a59;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.site-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 70px;
+}
+
+.site-logo img {
+  width: 170px;
+  height: auto;
+}
+
+.site-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.site-btn {
+  display: inline-block;
+  background: #e8b53a;
+  color: #1a1a1a;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.site-header-bottom {
+  background: #fff;
+  border-bottom: 1px solid #dfe6e2;
+}
+
+.site-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.site-menu a {
+  display: inline-block;
+  color: #1f2d28;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+.site-menu a.active,
+.site-menu a:hover {
+  background: rgba(31,106,89,.1);
+  color: #195444;
+}
+
+.leaderboard-page {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .container {
@@ -27,7 +107,7 @@ body {
   align-items: center;
 }
 
-header { text-align: center; }
+.board-header { text-align: center; }
 
 .logo img { width: 180px; }
 
@@ -154,6 +234,24 @@ header { text-align: center; }
 
 /* MOBILE FIX */
 @media (max-width: 600px) {
+  .site-row {
+    min-height: 62px;
+  }
+
+  .site-logo img {
+    width: 148px;
+  }
+
+  .site-btn {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+
+  .site-menu a {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
   /* Keep top 3 side-by-side, shrink slightly */
   .top3 {
     grid-template-columns: 1fr 1.2fr 1fr;
@@ -169,16 +267,43 @@ header { text-align: center; }
 </head>
 
 <body>
+<div class="site-header">
+  <div class="site-header-top">
+    <div class="site-container">
+      <div class="site-row">
+        <a class="site-logo" href="/index.html">
+          <img src="images/bg.png" alt="Bhaggo logo">
+        </a>
+        <div class="site-actions">
+          <a href="https://english-bhaggopartnerform.my.canva.site/" class="site-btn">Join Now</a>
+          <a href="https://t.me/BhaggoPartnersSupport_bot?start=w46997251" class="site-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-header-bottom">
+    <div class="site-container">
+      <ul class="site-menu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/commission.html">Commission Structure</a></li>
+        <li><a href="/leaderboard.html" class="active">Lanka Retreat Promo</a></li>
+        <li><a href="/contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="leaderboard-page">
 <div class="container">
 
-<header>
+<div class="board-header">
   <div class="logo">
     <img src="https://www.bhaggo.co/static/svg/logo_bhagyo_white.svg">
   </div>
   <h1>লঙ্কা রিট্রিট লিডারবোর্ড</h1>
   <div><b>১ ফেব্রুয়ারি ২০২৬ – ৩০ এপ্রিল ২০২৬</b></div>
   <div class="prize-link" onclick="openPrize()"><b>পুরস্কারের বিস্তারিত দেখুন &nbsp;→</b></div>
-</header>
+</div>
 
 <div class="top3">
   <div id="second" class="top-card">
@@ -211,6 +336,7 @@ header { text-align: center; }
   <div id="lastUpdated" class="meta"></div>
 </div>
 
+</div>
 </div>
 
 <!-- POPUP -->

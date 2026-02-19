@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+	--bg-soft: #f7f8f7;
+	--bg-card: #ffffff;
+	--text-main: #1f2d28;
+	--text-muted: #5b6964;
+	--primary: #1f6a59;
+	--primary-dark: #195444;
+	--accent: #e8b53a;
+	--accent-deep: #d29b1f;
+	--line: #e3e8e5;
+	--radius-md: 14px;
+	--radius-lg: 20px;
+	--shadow-soft: 0 4px 14px rgba(16, 39, 32, 0.05);
+	--shadow-card: 0 6px 16px rgba(16, 39, 32, 0.07);
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Anek Bangla', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+li,
+ul,
+ol,
+label,
+small,
+strong,
+em,
+button,
+input,
+select,
+textarea,
+td,
+th {
+	font-family: 'Anek Bangla', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+body {
+	background: var(--bg-soft);
+	color: var(--text-main);
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 800;
+	line-height: 1.2;
+	letter-spacing: -0.2px;
+}
+
+p {
+	line-height: 1.7;
+}
+
+.page-container {
+	max-width: 1180px;
+	padding: 0 18px;
+}
+
+.header {
+	backdrop-filter: blur(8px);
+}
+
+.header-top {
+	background: #1f6a59;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 10px 0;
+}
+
+.header-top .logo img {
+	width: 180px;
+	height: auto;
+}
+
+.group-auth-login {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.language-selection .select-language {
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 999px;
+	padding: 6px 12px;
+	background: rgba(255, 255, 255, 0.08);
+	color: #fff;
+}
+
+.btn-auth,
+.custom-button {
+	background: var(--accent);
+	color: #1a1a1a !important;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 999px;
+	font-weight: 800;
+	box-shadow: none;
+	letter-spacing: 0.2px;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-auth {
+	padding: 8px 16px;
+	text-transform: none;
+}
+
+.btn-auth.btn-signup {
+	border: 0;
+}
+
+.btn-auth:hover,
+.custom-button:hover {
+	transform: translateY(-1px);
+	background: var(--accent-deep);
+	text-decoration: none;
+}
+
+.header-bottom {
+	background: #ffffff;
+	border-bottom: 1px solid var(--line);
+	box-shadow: none;
+}
+
+.navbar {
+	background: transparent;
+}
+
+.header-bottom .menu .menu-item {
+	color: var(--text-main);
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	text-transform: none;
+	border-radius: 10px;
+	padding: 12px 18px;
+}
+
+.header-bottom .menu .menu-item:hover,
+.header-bottom .menu .menu-item:focus,
+.header-bottom .menu .menu-item.active {
+	background: rgba(31, 106, 89, 0.08) !important;
+	color: var(--primary-dark) !important;
+}
+
+.block {
+	padding: 54px 0;
+}
+
+.block-title {
+	font-size: 36px;
+	line-height: 1.15;
+	margin-bottom: 26px;
+	text-transform: none;
+	font-weight: 800;
+}
+
+.block-title .why-become {
+	color: var(--primary-dark);
+}
+
+.block-title .affiliate {
+	color: var(--accent-deep);
+}
+
+.main .content {
+	margin-top: 8px;
+}
+
+.top-banner .swiper-slide img {
+	border-radius: 16px;
+	box-shadow: none;
+}
+
+.block-about,
+.block-get-started,
+.block-faq,
+.block-man-support,
+.block-commission-structure {
+	background: transparent;
+}
+
+.block-about .group-block,
+.block-get-started .block-content,
+.block-faq .block-content,
+.block-man-support .page-container,
+.block-commission-structure .page-container {
+	background: var(--bg-card);
+	border: 1px solid var(--line);
+	border-radius: var(--radius-lg);
+	box-shadow: none;
+	padding: 28px;
+}
+
+.block-about .group-block,
+.block-get-started .block-content,
+.block-faq .block-content {
+	backdrop-filter: none;
+}
+
+.block-why-become .block-content {
+	gap: 18px;
+	flex-wrap: wrap;
+}
+
+.block-why-become .block-content .items {
+	background: var(--bg-card);
+	border: 1px solid var(--line);
+	border-radius: var(--radius-md);
+	padding: 20px 14px;
+	min-height: 165px;
+	box-shadow: none;
+	flex: 1 1 220px;
+	max-width: 260px;
+	transition: transform 0.2s ease;
+}
+
+.block-why-become .block-content .items:hover {
+	transform: translateY(-2px);
+}
+
+.block-why-become .block-content .items .heading-items,
+.block-about .block-content,
+.group-faq .anwser,
+.block-get-started .block-content .items .heading-items,
+.block-get-started .block-content .items .description,
+.date-time-info p {
+	color: var(--text-muted);
+}
+
+.block-get-started .block-content .items {
+	border: 1px solid var(--line);
+	border-radius: var(--radius-md);
+	padding: 18px 12px;
+	box-shadow: none;
+	transition: transform 0.2s ease;
+}
+
+.block-get-started .block-content .items:hover {
+	transform: translateY(-2px);
+}
+
+.block-get-started .block-content .items .icon {
+	background: rgba(14, 123, 105, 0.08);
+}
+
+.group-faq .question .title {
+	color: var(--primary-dark);
+}
+
+.group-faq .question .button-toggle {
+	background: var(--primary);
+}
+
+.group-faq .anwser {
+	border: 1px solid var(--line);
+	box-shadow: none;
+}
+
+.group-faq .anwser-heading {
+	color: var(--text-main);
+}
+
+.footer {
+	background: #1d2d28;
+}
+
+.footer-text {
+	border-top-color: rgba(255, 255, 255, 0.14);
+	text-transform: none;
+	letter-spacing: 0.2px;
+}
+
+.footer-img .img-bottom .item {
+	border-right-color: rgba(255, 255, 255, 0.24);
+}
+
+.btn-move-top {
+	border-radius: 999px;
+	background: var(--primary);
+	border: 0;
+	box-shadow: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.header-bottom .menu {
+		background: #f3f7f4;
+		border-top: 1px solid var(--line);
+	}
+
+	.header-bottom .menu .menu-item {
+		text-align: left;
+	}
+
+	.block-title {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 600px) {
+	.page-container {
+		padding: 0 14px;
+	}
+
+	.header-top .logo img {
+		width: 156px;
+	}
+
+	.group-auth-login {
+		justify-content: center;
+	}
+
+	.btn-auth {
+		font-size: 12px;
+		padding: 7px 14px;
+	}
+
+	.block {
+		padding: 40px 0;
+	}
+
+	.block-title {
+		font-size: 24px;
+		margin-bottom: 18px;
+	}
+
+	.block-about .group-block,
+	.block-get-started .block-content,
+	.block-faq .block-content,
+	.block-man-support .page-container,
+	.block-commission-structure .page-container {
+		padding: 18px;
+		border-radius: 16px;
+	}
+}
