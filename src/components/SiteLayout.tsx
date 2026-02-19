@@ -1,16 +1,11 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-
-const navItems = [
-  { label: 'Home', to: '/home', external: false },
-  { label: 'Commission Structure', to: '/commission', external: false },
-  { label: 'Lanka Retreat Promo', to: 'https://lankaretreat.pages.dev/', external: true },
-  { label: 'Contact Us', to: '/contact', external: false },
-] as const
+import { useLanguage } from '../context/LanguageContext'
 
 export function SiteLayout() {
-  const [language, setLanguage] = useState<'en' | 'bn'>('en')
+  const { language, setLanguage, t } = useLanguage()
   const [languageOpen, setLanguageOpen] = useState(false)
+  const navItems = t.layout.navItems
 
   return (
     <div className="site-shell">
@@ -23,7 +18,7 @@ export function SiteLayout() {
             <div className="top-right">
               <div className="top-actions">
                 <a className="cta" href="https://english-bhaggopartnerform.my.canva.site/">
-                  Join Now
+                  {t.layout.joinNow}
                 </a>
               </div>
               <div className="language-selector">
@@ -34,12 +29,12 @@ export function SiteLayout() {
                   aria-expanded={languageOpen}
                   onClick={() => setLanguageOpen((prev) => !prev)}
                 >
-                  <img src={language === 'en' ? '/images/en.png' : '/images/bn.png'} alt="Selected language flag" />
+                  <img src={language === 'en' ? '/images/en.png' : '/images/bn.png'} alt={t.layout.selectedLanguageFlagAlt} />
                   <span>{language === 'en' ? 'EN' : 'BN'}</span>
                 </button>
 
                 {languageOpen ? (
-                  <div className="language-menu" role="listbox" aria-label="Language options">
+                  <div className="language-menu" role="listbox" aria-label={t.layout.languageOptionsLabel}>
                     <button
                       type="button"
                       className={language === 'en' ? 'language-item active' : 'language-item'}
@@ -48,7 +43,7 @@ export function SiteLayout() {
                         setLanguageOpen(false)
                       }}
                     >
-                      <img src="/images/en.png" alt="UK flag" />
+                      <img src="/images/en.png" alt={t.layout.englishFlagAlt} />
                       <span>EN</span>
                     </button>
                     <button
@@ -59,7 +54,7 @@ export function SiteLayout() {
                         setLanguageOpen(false)
                       }}
                     >
-                      <img src="/images/bn.png" alt="Bangladesh flag" />
+                      <img src="/images/bn.png" alt={t.layout.banglaFlagAlt} />
                       <span>BN</span>
                     </button>
                   </div>
@@ -102,7 +97,7 @@ export function SiteLayout() {
             <img src="/images/gt.png" alt="Gaming Therapy" />
             <img src="/images/gamingcuracao.png" alt="Gaming Curacao" />
           </div>
-          <p>Copyright 2025 | Bhaggo Partners. All Rights Reserved | 18+</p>
+          <p>{t.layout.footerCopyright}</p>
         </div>
       </footer>
     </div>
