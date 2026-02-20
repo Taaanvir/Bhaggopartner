@@ -8,7 +8,7 @@ export function SiteLayout() {
   const navItems = t.layout.navItems
 
   return (
-    <div className="site-shell">
+    <div className="site-shell" data-language={language}>
       <header className="header">
         <div className="header-top">
           <div className="page-wrap top-row">

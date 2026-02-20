@@ -765,6 +765,165 @@ div {
   margin-top: 0;
 }
 
+.lankaretreat-page {
+  width: 100%;
+}
+
+.lankaretreat-native {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lanka-hero {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(24, 85, 72, 0.14);
+}
+
+.lanka-hero img {
+  width: 100%;
+  display: block;
+}
+
+.lanka-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 26px;
+  background: linear-gradient(180deg, rgba(8, 31, 26, 0.45), rgba(8, 31, 26, 0.82));
+  color: #fff;
+}
+
+.lanka-hero-overlay h1 {
+  margin: 0 0 8px;
+  font-size: 42px;
+}
+
+.lanka-hero-overlay p {
+  color: #e4efeb;
+  max-width: 720px;
+}
+
+.lanka-subtext {
+  margin-top: 0;
+}
+
+.lanka-cta-row {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.lanka-cta-row .cta {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.2;
+  padding: 7px 12px;
+  min-height: 36px;
+  font-size: 12px;
+}
+
+.lanka-prize-grid,
+.lanka-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.lanka-prize-card,
+.lanka-step {
+  padding: 16px;
+}
+
+.lanka-prize-card h4 {
+  margin: 0;
+  color: var(--primary-strong);
+}
+
+.lanka-prize-card p {
+  margin-top: 5px;
+}
+
+.lanka-prize-card ul,
+.lanka-terms-plain {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.lanka-monthly {
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.lanka-monthly img {
+  width: 220px;
+  max-width: 100%;
+}
+
+.lanka-monthly strong {
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 8px;
+  color: var(--primary-strong);
+}
+
+.lanka-score {
+  padding: 20px;
+}
+
+.lanka-score h2,
+.lanka-monthly h2 {
+  margin-top: 0;
+}
+
+.lanka-step span {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: var(--accent);
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
+.lanka-step p {
+  margin-top: 10px;
+}
+
+.lanka-terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lanka-terms-box {
+  padding: 14px 16px;
+}
+
+.lanka-terms-plain {
+  margin: 0;
+  list-style-type: disc;
+  padding-left: 22px;
+}
+
+.lanka-terms-plain li {
+  color: var(--muted);
+  line-height: 1.72;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
 .footer {
   background: linear-gradient(140deg, #122f28, #1a3f36);
   color: #d9e3de;
@@ -913,6 +1072,12 @@ div {
     scrollbar-width: none;
   }
 
+  .site-shell[data-language='en'] .nav-row {
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+
   .nav-row::-webkit-scrollbar {
     display: none;
   }
@@ -1038,6 +1203,26 @@ div {
   .padded {
     padding: 17px;
   }
+
+  .lanka-prize-grid,
+  .lanka-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lanka-monthly {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lanka-hero-overlay {
+    position: static;
+    background: linear-gradient(180deg, #0f5649, #0b3f35);
+  }
+
+  .lanka-hero-overlay h1 {
+    font-size: 31px;
+  }
+
 }
 
 @media (prefers-reduced-motion: reduce) {

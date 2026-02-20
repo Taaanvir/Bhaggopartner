@@ -3,6 +3,7 @@ import { SiteLayout } from './components/SiteLayout'
 import { HomePage } from './pages/HomePage'
 import { CommissionPage } from './pages/CommissionPage'
 import { ContactPage } from './pages/ContactPage'
+import { LankaRetreatPage } from './pages/LankaRetreatPage'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/commission" element={<CommissionPage />} />
+        <Route path="/lankaretreat" element={<LankaRetreatPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />

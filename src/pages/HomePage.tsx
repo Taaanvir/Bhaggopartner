@@ -1,4 +1,5 @@
 import { useLanguage } from '../context/LanguageContext'
+import { Link } from 'react-router-dom'
 
 const benefits = [
   { icon: '/images/elementb1.png' },
@@ -52,9 +53,9 @@ export function HomePage() {
         <div>
           <h3>{t.home.promoTitle}</h3>
           <p>{t.home.promoPeriod}</p>
-          <a className="cta promo-join" href="https://lankaretreat.pages.dev/" target="_blank" rel="noreferrer">
+          <Link className="cta promo-join" to="/lankaretreat">
             {t.home.promoJoinNow}
-          </a>
+          </Link>
         </div>
         <div className="promo-prizes">
           <article className="reward-card top-one">

@@ -72,7 +72,7 @@ export const translations: Record<Language, TranslationSchema> = {
       navItems: [
         { label: 'Home', to: '/home', external: false },
         { label: 'Commission Structure', to: '/commission', external: false },
-        { label: 'Lanka Retreat Promo', to: 'https://lankaretreat.pages.dev/', external: true },
+        { label: 'Lanka Retreat Promo', to: '/lankaretreat', external: false },
         { label: 'Contact Us', to: '/contact', external: false },
       ],
       joinNow: 'Join Now',
@@ -122,9 +122,9 @@ export const translations: Record<Language, TranslationSchema> = {
       ],
       aboutTitle: 'About Bhaggo Affiliate',
       aboutP1:
-        'Bhaggo combines strong conversion flow, reliable user retention, and transparent affiliate reporting for both beginner and advanced partners.',
+        'Bhaggo Partners is designed for website owners, social media influencers, digital marketers, and anyone interested in earning money online by promoting a trusted, high-converting gaming brand. Whether you have a big audience or you’re just starting out, the program makes it easy to earn consistent long-term income.',
       aboutP2:
-        'Instead of short-term campaigns, the program is built for sustainable monthly earnings backed by responsive support and clear payout structure.',
+        'Every user who signs up and deposits through your unique affiliate link generates recurring revenue for you creating a stable and scalable earning opportunity in the Bangladeshi iGaming market.',
       commissionTitle: 'Highest commission in market',
       commissionIntro: 'Tier-based structure designed to reward quality traffic and long-term partner growth.',
       commissionTableAriaLabel: 'Commission structure table',
@@ -134,7 +134,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
       commissionRows: [
         { players: '1 - 10 Active Players', commission: '20%' },
-        { players: '10 - 19 Active Players', commission: '35%' },
+        { players: '11 - 19 Active Players', commission: '35%' },
         { players: '20 or more active players', commission: '50%' },
       ],
       stepsTitle: 'How to start in 4 steps',
@@ -172,7 +172,7 @@ export const translations: Record<Language, TranslationSchema> = {
       },
       tableRows: [
         { players: '1 - 10 Active Players', commission: '20%' },
-        { players: '10 - 19 Active Players', commission: '35%' },
+        { players: '11 - 19 Active Players', commission: '35%' },
         { players: '20 or more active players', commission: '50%' },
       ],
       joinNow: 'Join Now',
@@ -215,7 +215,7 @@ export const translations: Record<Language, TranslationSchema> = {
       navItems: [
         { label: 'হোম', to: '/home', external: false },
         { label: 'কমিশন স্ট্রাকচার', to: '/commission', external: false },
-        { label: 'লঙ্কা রিট্রিট প্রোমো', to: 'https://lankaretreat.pages.dev/', external: true },
+        { label: 'লঙ্কা রিট্রিট প্রোমো', to: '/lankaretreat', external: false },
         { label: 'যোগাযোগ', to: '/contact', external: false },
       ],
       joinNow: 'এখনই যোগ দিন',
@@ -246,45 +246,45 @@ export const translations: Record<Language, TranslationSchema> = {
       whyIntro: 'দীর্ঘমেয়াদি পার্টনারদের জন্য স্বচ্ছ ট্র্যাকিং, প্রতিযোগিতামূলক পেআউট এবং দ্রুত ক্যাম্পেইন সাপোর্ট।',
       benefits: [
         {
-          title: 'সহজে যোগদান',
-          text: 'দ্রুত অনবোর্ডিং, তাত্ক্ষণিক ট্র্যাকিং লিংক এবং সাথে সাথে ক্যাম্পেইন শুরু।',
+          title: 'সহজে জয়েন করুন',
+          text: 'দ্রুত অনবোর্ডিং, আর সাথে সাথেই কাজ শুরু করার সুযোগ।',
         },
         {
           title: 'বড় কমিশন',
-          text: 'শীর্ষ পারফর্মার পার্টনার স্ল্যাবে সর্বোচ্চ ৫০% রেভিনিউ শেয়ার।',
+          text: 'টপ পারফর্মারদের জন্য সর্বোচ্চ ৫০% পর্যন্ত রেভিনিউ শেয়ার।',
         },
         {
           title: 'লাইফটাইম আয়',
-          text: 'উচ্চমানের ব্যবহারকারীদের থেকে দীর্ঘমেয়াদে নিয়মিত আয় করুন।',
+          text: 'ভালো ও একটিভ ইউজার থাকলে দীর্ঘ সময় ধরে কমিশন পেতে থাকবেন।',
         },
         {
           title: 'ফ্লেক্সিবল প্রোমোশন',
-          text: 'সোশ্যাল, কমিউনিটি বা কনটেন্ট প্ল্যাটফর্ম থেকে ফ্লেক্সিবলি ট্রাফিক আনুন।',
+          text: 'সোশ্যাল মিডিয়া, কমিউনিটি বা নিজের কনটেন্ট প্ল্যাটফর্ম থেকে সহজে প্রোমোট করার সুযোগ।',
         },
       ],
       aboutTitle: 'Bhaggo অ্যাফিলিয়েট সম্পর্কে',
       aboutP1:
-        'Bhaggo শক্তিশালী কনভার্সন ফ্লো, নির্ভরযোগ্য ইউজার রিটেনশন এবং স্বচ্ছ অ্যাফিলিয়েট রিপোর্টিং একসাথে প্রদান করে।',
+        'Bhaggo Partners তাদের জন্য, যারা অনলাইনে আরও টাকা আয় করতে চান এবং আপনার যদি কোন ওয়েবসাইট থাকে, সোশ্যাল মিডিয়ায় অ্যাকটিভ, ডিজিটাল মার্কেটিং করেন, বা শুধু নতুনভাবে অনলাইন ইনকাম শুরু করতে চান তাহলে এই প্রোগ্রামটি আপনার জন্য।',
       aboutP2:
-        'স্বল্পমেয়াদি ক্যাম্পেইনের বদলে, এই প্রোগ্রামটি রেসপনসিভ সাপোর্ট ও পরিষ্কার পেআউট স্ট্রাকচারের মাধ্যমে টেকসই মাসিক আয়ের জন্য তৈরি।',
-      commissionTitle: 'বাজারের সর্বোচ্চ কমিশন',
+        'অডিয়েন্স বড় হোক বা ছোট, সমস্যা নেই। শুরু করা সহজ, আর নিয়মিত আয়ের সুযোগও দীর্ঘমেয়াদি। আপনার নিজের অ্যাফিলিয়েট লিংক দিয়ে কেউ রেজিস্টার করে ডিপোজিট করলেই, সেখান থেকে আপনি কমিশন পাবেন। যত বেশি একটিভ প্লেয়ার আনবেন, তত বেশি আপনার আয় বাড়বে। তাই এটা হতে পারে আপনার জন্য দারুণ একটি টাকা ইনকামের সুযোগ।',
+      commissionTitle: 'সবচেয়ে বেশি কমিশন',
       commissionIntro: 'কোয়ালিটি ট্রাফিক ও দীর্ঘমেয়াদি পার্টনার গ্রোথকে পুরস্কৃত করার জন্য টিয়ার-ভিত্তিক স্ট্রাকচার।',
       commissionTableAriaLabel: 'কমিশন স্ট্রাকচার টেবিল',
       commissionHeaders: {
-        activePlayers: 'সক্রিয় প্লেয়ার',
+        activePlayers: 'একটিভ প্লেয়ার',
         commission: 'কমিশন',
       },
       commissionRows: [
-        { players: '১ - ১০ সক্রিয় প্লেয়ার', commission: '২০%' },
-        { players: '১০ - ১৯ সক্রিয় প্লেয়ার', commission: '৩৫%' },
-        { players: '২০ বা তার বেশি সক্রিয় প্লেয়ার', commission: '৫০%' },
+        { players: '১ - ১০ একটিভ প্লেয়ার', commission: '২০%' },
+        { players: '১১ - ১৯ একটিভ প্লেয়ার', commission: '৩৫%' },
+        { players: '২০ বা তার বেশি একটিভ প্লেয়ার', commission: '৫০%' },
       ],
       stepsTitle: '৪ ধাপে কীভাবে শুরু করবেন',
       steps: [
-        { title: 'ধাপ ০১ · রেজিস্টার', text: 'অ্যাফিলিয়েট আবেদন জমা দিন এবং দ্রুত অনুমোদন পান।' },
-        { title: 'ধাপ ০২ · প্রোমোট', text: 'রেডি-টু-ইউজ ক্রিয়েটিভ দিয়ে আপনার ট্র্যাকিং লিংক চালু করুন।' },
-        { title: 'ধাপ ০৩ · কনভার্ট', text: 'উচ্চ কনভার্টিং প্রোডাক্ট অভিজ্ঞতার মাধ্যমে প্রথম ডিপোজিট আনুন।' },
-        { title: 'ধাপ ০৪ · স্কেল', text: 'পার্টনার সাপোর্ট ও অপ্টিমাইজেশনের মাধ্যমে ক্যাম্পেইন বড় করুন।' },
+        { title: 'ধাপ ০১ · রেজিস্টার করুন', text: 'অ্যাফিলিয়েট ফর্ম পূরণ করুন, দ্রুত অনুমোদন পেয়ে যান।' },
+        { title: 'ধাপ ০২ · প্রোমোট করুন', text: 'আপনার ট্র্যাকিং লিংক নিয়ে পোস্ট/শেয়ার করা শুরু করুন। ব্যানার ও কনটেন্ট রেডি থাকবে।।' },
+        { title: 'ধাপ ০৩ · ডিপোজিট আনুন', text: 'আপনার লিংক থেকে কেউ সাইন আপ করে প্রথম ডিপোজিট করলেই আপনার আয় শুরু।' },
+        { title: 'ধাপ ০৪ · আয় বাড়ান', text: 'পার্টনার সাপোর্ট ও অপ্টিমাইজেশনের সাহায্যে আরও ভালোভাবে কাজ করে আয় বাড়াতে থাকুন।।' },
       ],
       productsTitle: 'যেসব প্রোডাক্ট আপনি প্রোমোট করতে পারবেন',
       products: ['স্পোর্টসবুক', 'লাইভ ক্যাসিনো', 'স্লটস', 'ক্র্যাশ গেমস', 'টেবিল গেমস', 'ফিশিং গেমস'],
@@ -292,15 +292,15 @@ export const translations: Record<Language, TranslationSchema> = {
       faqs: [
         {
           q: 'কত দ্রুত আমি আয় শুরু করতে পারি?',
-          a: 'অনুমোদনের ২৪ ঘণ্টার মধ্যে বেশিরভাগ পার্টনার ট্রাফিক চালু করতে পারেন এবং রিয়েল-টাইম পারফরম্যান্স ট্র্যাক করতে পারেন।',
+          a: 'অ্যাপ্রুভাল পাওয়ার পর বেশিরভাগ পার্টনার ২৪ ঘণ্টার মধ্যেই কাজ শুরু করতে পারেন। আপনার ট্রাফিক ও পারফরম্যান্স ট্র্যাক করতে পারবেন।',
         },
         {
-          q: 'পেআউটের সময়?',
-          a: 'পেআউট নিয়মিত সাইকেল অনুসরণ করে, স্বচ্ছ রিপোর্টিং এবং পরিষ্কার কমিশন ব্রেকডাউনসহ।',
+          q: 'পেমেন্ট কতদিন পর পর হয়?',
+          a: 'নির্দিষ্ট সময় অনুযায়ী নিয়মিত পেমেন্ট দেওয়া হয়। রিপোর্ট ও কমিশনের হিসাব দেখতে পারবেন।',
         },
         {
-          q: 'ক্যাম্পেইন সাপোর্ট কি পাওয়া যায়?',
-          a: 'হ্যাঁ। ক্রিয়েটিভ, ক্যাম্পেইন স্ট্র্যাটেজি এবং কনভার্সন উন্নত করতে ডেডিকেটেড সাপোর্ট দেওয়া হয়।',
+          q: 'ক্যাম্পেইন সাপোর্ট পাবো?',
+          a: 'অবশ্যই। ব্যানার, কনটেন্ট, প্রোমোশন আইডিয়া থেকে শুরু করে কনভার্সন বাড়ানোর গাইডলাইন সবকিছুতেই সাপোর্ট পাবেন।',
         },
       ],
     },
@@ -309,13 +309,13 @@ export const translations: Record<Language, TranslationSchema> = {
       pageIntro: 'প্রতিযোগিতামূলক, স্বচ্ছ এবং স্কেলযোগ্য অ্যাফিলিয়েট পারফরম্যান্সের জন্য অপ্টিমাইজড।',
       tableAriaLabel: 'কমিশন স্ট্রাকচার টেবিল',
       tableHeaders: {
-        activePlayers: 'সক্রিয় প্লেয়ার',
+        activePlayers: 'একটিভ প্লেয়ার',
         commission: 'কমিশন',
       },
       tableRows: [
-        { players: '১ - ১০ সক্রিয় প্লেয়ার', commission: '২০%' },
-        { players: '১০ - ১৯ সক্রিয় প্লেয়ার', commission: '৩৫%' },
-        { players: '২০ বা তার বেশি সক্রিয় প্লেয়ার', commission: '৫০%' },
+        { players: '১ - ১০ একটিভ প্লেয়ার', commission: '২০%' },
+        { players: '১১ - ১৯ একটিভ প্লেয়ার', commission: '৩৫%' },
+        { players: '২০ বা তার বেশি একটিভ প্লেয়ার', commission: '৫০%' },
       ],
       joinNow: 'এখনই যোগ দিন',
       termsTitle: 'শর্তাবলী',
